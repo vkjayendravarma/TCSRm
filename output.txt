@@ -1,0 +1,216 @@
+Dimensions of the Training set: (125973, 42)
+Dimensions of the Test set: (22544, 42)
+Label distribution Training set:
+normal             67343
+neptune            41214
+satan               3633
+ipsweep             3599
+portsweep           2931
+smurf               2646
+nmap                1493
+back                 956
+teardrop             892
+warezclient          890
+pod                  201
+guess_passwd          53
+buffer_overflow       30
+warezmaster           20
+land                  18
+imap                  11
+rootkit               10
+loadmodule             9
+ftp_write              8
+multihop               7
+phf                    4
+perl                   3
+spy                    2
+Name: label, dtype: int64
+
+Label distribution Test set:
+normal             9711
+neptune            4657
+guess_passwd       1231
+mscan               996
+warezmaster         944
+apache2             737
+satan               735
+processtable        685
+smurf               665
+back                359
+snmpguess           331
+saint               319
+mailbomb            293
+snmpgetattack       178
+portsweep           157
+ipsweep             141
+httptunnel          133
+nmap                 73
+pod                  41
+buffer_overflow      20
+multihop             18
+named                17
+ps                   15
+sendmail             14
+xterm                13
+rootkit              13
+teardrop             12
+xlock                 9
+land                  7
+xsnoop                4
+ftp_write             3
+phf                   2
+sqlattack             2
+loadmodule            2
+worm                  2
+perl                  2
+udpstorm              2
+imap                  1
+Name: label, dtype: int64
+Training set:
+Feature 'protocol_type' has 3 categories
+Feature 'service' has 70 categories
+Feature 'flag' has 11 categories
+Feature 'label' has 23 categories
+
+Distribution of categories in service:
+http        40338
+private     21853
+domain_u     9043
+smtp         7313
+ftp_data     6860
+Name: service, dtype: int64
+Test set:
+Feature 'protocol_type' has 3 categories
+Feature 'service' has 64 categories
+Feature 'flag' has 11 categories
+Feature 'label' has 38 categories
+['Protocol_type_icmp', 'Protocol_type_tcp', 'Protocol_type_udp', 'service_IRC', 'service_X11', 'service_Z39_50', 'service_aol', 'service_auth', 'service_bgp', 'service_courier', 'service_csnet_ns', 'service_ctf', 'service_daytime', 'service_discard', 'service_domain', 'service_domain_u', 'service_echo', 'service_eco_i', 'service_ecr_i', 'service_efs', 'service_exec', 'service_finger', 'service_ftp', 'service_ftp_data', 'service_gopher', 'service_harvest', 'service_hostnames', 'service_http', 'service_http_2784', 'service_http_443', 'service_http_8001', 'service_imap4', 'service_iso_tsap', 'service_klogin', 'service_kshell', 'service_ldap', 'service_link', 'service_login', 'service_mtp', 'service_name', 'service_netbios_dgm', 'service_netbios_ns', 'service_netbios_ssn', 'service_netstat', 'service_nnsp', 'service_nntp', 'service_ntp_u', 'service_other', 'service_pm_dump', 'service_pop_2', 'service_pop_3', 'service_printer', 'service_private', 'service_red_i', 'service_remote_job', 'service_rje', 'service_shell', 'service_smtp', 'service_sql_net', 'service_ssh', 'service_sunrpc', 'service_supdup', 'service_systat', 'service_telnet', 'service_tftp_u', 'service_tim_i', 'service_time', 'service_urh_i', 'service_urp_i', 'service_uucp', 'service_uucp_path', 'service_vmnet', 'service_whois', 'flag_OTH', 'flag_REJ', 'flag_RSTO', 'flag_RSTOS0', 'flag_RSTR', 'flag_S0', 'flag_S1', 'flag_S2', 'flag_S3', 'flag_SF', 'flag_SH']
+   protocol_type  service  flag
+0              1       20     9
+1              2       44     9
+2              1       49     5
+3              1       24     9
+4              1       24     9
+(125973, 123)
+(22544, 123)
+0    0
+1    0
+2    1
+3    0
+4    0
+Name: label, dtype: int64
+Train:
+Dimensions of DoS: (113270, 123)
+Dimensions of Probe: (78999, 123)
+Dimensions of R2L: (68338, 123)
+Dimensions of U2R: (67395, 123)
+Test:
+Dimensions of DoS: (17171, 123)
+Dimensions of Probe: (12132, 123)
+Dimensions of R2L: (12596, 123)
+Dimensions of U2R: (9778, 123)
+[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 0. 1. 0. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 0. 1. 1. 1. 1. 1.
+ 1. 1.]
+/home/keshav/Desktop/TCS projects/test2/env/lib/python3.6/site-packages/sklearn/feature_selection/_univariate_selection.py:114: UserWarning: Features [ 16  44  63  66  68  86 114] are constant.
+  UserWarning)
+/home/keshav/Desktop/TCS projects/test2/env/lib/python3.6/site-packages/sklearn/feature_selection/_univariate_selection.py:114: UserWarning: Features [ 4 16] are constant.
+  UserWarning)
+/home/keshav/Desktop/TCS projects/test2/env/lib/python3.6/site-packages/sklearn/feature_selection/_univariate_selection.py:114: UserWarning: Features [  4  16  43  44  46  47  48  49  50  51  54  57  58  62  63  64  66  67
+  68  70  71  72  73  74  76  77  78  79  80  81  82  83  86  87  89  92
+  93  96  98  99 100 107 108 109 110 114] are constant.
+  UserWarning)
+/home/keshav/Desktop/TCS projects/test2/env/lib/python3.6/site-packages/sklearn/feature_selection/_univariate_selection.py:114: UserWarning: Features [  4  16  43  44  46  47  48  49  50  51  54  57  58  62  63  64  66  67
+  68  70  71  72  73  74  75  76  77  78  79  80  81  82  83  86  87  89
+  92  93  96  98  99 100 107 108 109 110 114] are constant.
+  UserWarning)
+Features selected for DoS: ['logged_in', 'count', 'serror_rate', 'srv_serror_rate', 'same_srv_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'service_http', 'flag_S0', 'flag_SF']
+
+Features selected for Probe: ['logged_in', 'rerror_rate', 'srv_rerror_rate', 'dst_host_srv_count', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'dst_host_rerror_rate', 'dst_host_srv_rerror_rate', 'Protocol_type_icmp', 'service_eco_i', 'service_private', 'flag_SF']
+
+Features selected for R2L: ['src_bytes', 'dst_bytes', 'hot', 'num_failed_logins', 'is_guest_login', 'dst_host_srv_count', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'service_ftp', 'service_ftp_data', 'service_http', 'service_imap4', 'flag_RSTO']
+
+Features selected for U2R: ['urgent', 'hot', 'root_shell', 'num_file_creations', 'num_shells', 'srv_diff_host_rate', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'service_ftp_data', 'service_http', 'service_telnet']
+DoS Features sorted by their rank:
+[(1, 'same_srv_rate'), (2, 'count'), (3, 'flag_SF'), (4, 'dst_host_serror_rate'), (5, 'dst_host_same_srv_rate'), (6, 'dst_host_srv_count'), (7, 'dst_host_count'), (8, 'logged_in'), (9, 'serror_rate'), (10, 'dst_host_srv_serror_rate'), (11, 'srv_serror_rate'), (12, 'service_http'), (13, 'flag_S0')]
+Probe Features sorted by their rank:
+[(1, 'dst_host_same_src_port_rate'), (2, 'dst_host_srv_count'), (3, 'dst_host_rerror_rate'), (4, 'service_private'), (5, 'logged_in'), (6, 'dst_host_diff_srv_rate'), (7, 'dst_host_srv_diff_host_rate'), (8, 'flag_SF'), (9, 'service_eco_i'), (10, 'rerror_rate'), (11, 'Protocol_type_icmp'), (12, 'dst_host_srv_rerror_rate'), (13, 'srv_rerror_rate')]
+R2L Features sorted by their rank:
+[(1, 'src_bytes'), (2, 'dst_bytes'), (3, 'hot'), (4, 'dst_host_srv_diff_host_rate'), (5, 'service_ftp_data'), (6, 'dst_host_same_src_port_rate'), (7, 'dst_host_srv_count'), (8, 'num_failed_logins'), (9, 'service_imap4'), (10, 'is_guest_login'), (11, 'service_ftp'), (12, 'flag_RSTO'), (13, 'service_http')]
+U2R Features sorted by their rank:
+[(1, 'hot'), (2, 'dst_host_srv_count'), (3, 'dst_host_count'), (4, 'root_shell'), (5, 'num_shells'), (6, 'service_ftp_data'), (7, 'dst_host_srv_diff_host_rate'), (8, 'num_file_creations'), (9, 'dst_host_same_src_port_rate'), (10, 'service_telnet'), (11, 'srv_diff_host_rate'), (12, 'service_http'), (13, 'urgent')]
+Features selected for DoS: ['src_bytes', 'dst_bytes', 'wrong_fragment', 'num_compromised', 'same_srv_rate', 'diff_srv_rate', 'dst_host_count', 'dst_host_same_srv_rate', 'dst_host_serror_rate', 'dst_host_srv_serror_rate', 'service_ecr_i', 'flag_RSTR', 'flag_S0']
+
+Features selected for Probe: ['src_bytes', 'dst_bytes', 'rerror_rate', 'dst_host_same_srv_rate', 'dst_host_diff_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_rerror_rate', 'service_finger', 'service_ftp_data', 'service_http', 'service_private', 'service_smtp', 'service_telnet']
+
+Features selected for R2L: ['duration', 'src_bytes', 'dst_bytes', 'hot', 'num_failed_logins', 'num_access_files', 'dst_host_count', 'dst_host_srv_count', 'dst_host_same_srv_rate', 'dst_host_same_src_port_rate', 'dst_host_srv_diff_host_rate', 'service_ftp_data', 'service_imap4']
+
+Features selected for U2R: ['duration', 'src_bytes', 'dst_bytes', 'hot', 'root_shell', 'num_file_creations', 'num_shells', 'srv_count', 'dst_host_count', 'dst_host_same_srv_rate', 'dst_host_srv_diff_host_rate', 'service_ftp_data', 'service_other']
+(113270, 13)
+(78999, 13)
+(68338, 13)
+(67395, 13)
+DoS
+Accuracy: 0.99639 (+/- 0.00341)
+Precision: 0.99505 (+/- 0.00477)
+Recall: 0.99665 (+/- 0.00483)
+F-measure: 0.99585 (+/- 0.00392)
+probe
+Accuracy: 0.99571 (+/- 0.00328)
+Precision: 0.99392 (+/- 0.00684)
+Recall: 0.99267 (+/- 0.00405)
+F-measure: 0.99329 (+/- 0.00512)
+R2L
+Accuracy: 0.97920 (+/- 0.01053)
+Precision: 0.97151 (+/- 0.01736)
+Recall: 0.96958 (+/- 0.01379)
+F-measure: 0.97051 (+/- 0.01478)
+U2R
+Accuracy: 0.99652 (+/- 0.00228)
+Precision: 0.86295 (+/- 0.08961)
+Recall: 0.90958 (+/- 0.09211)
+F-measure: 0.88210 (+/- 0.06559)
+None
+Accuracy: 0.99738 (+/- 0.00267)
+Precision: 0.99692 (+/- 0.00492)
+Recall: 0.99705 (+/- 0.00356)
+F-measure: 0.99698 (+/- 0.00307)
+Accuracy: 0.99085 (+/- 0.00559)
+Precision: 0.98674 (+/- 0.01179)
+Recall: 0.98467 (+/- 0.01026)
+F-measure: 0.98566 (+/- 0.00871)
+Accuracy: 0.97459 (+/- 0.00910)
+Precision: 0.96689 (+/- 0.01311)
+Recall: 0.96086 (+/- 0.01571)
+F-measure: 0.96379 (+/- 0.01305)
+Accuracy: 0.99652 (+/- 0.00278)
+Precision: 0.87538 (+/- 0.15433)
+Recall: 0.89540 (+/- 0.14777)
+F-measure: 0.87731 (+/- 0.09647)
+Accuracy: 0.99738 (+/- 0.00267)
+Accuracy: 0.99085 (+/- 0.00559)
+Accuracy: 0.97459 (+/- 0.00910)
+Accuracy: 0.99652 (+/- 0.00278)
+Accuracy: 0.99662 (+/- 0.00116)
+Accuracy: 0.99709 (+/- 0.00064)
+Accuracy: 0.99738 (+/- 0.00267)
+Accuracy: 0.99726 (+/- 0.00430)
+Accuracy: 0.99703 (+/- 0.00622)
+Accuracy: 0.99060 (+/- 0.00165)
+Accuracy: 0.99093 (+/- 0.00233)
+Accuracy: 0.99085 (+/- 0.00559)
+Accuracy: 0.99118 (+/- 0.00742)
+Accuracy: 0.99085 (+/- 0.01122)
+Accuracy: 0.97118 (+/- 0.00143)
+Accuracy: 0.97388 (+/- 0.00624)
+Accuracy: 0.97459 (+/- 0.00910)
+Accuracy: 0.97467 (+/- 0.01644)
+Accuracy: 0.97523 (+/- 0.01795)
+Accuracy: 0.99519 (+/- 0.00184)
+Accuracy: 0.99714 (+/- 0.00153)
+Accuracy: 0.99652 (+/- 0.00278)
+Accuracy: 0.99693 (+/- 0.00571)
+Accuracy: 0.99662 (+/- 0.00755)
